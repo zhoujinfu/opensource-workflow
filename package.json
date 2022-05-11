@@ -12,7 +12,7 @@
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "pnpm build && pnpm release:only",
-    "release:only": "changeset publish --registry=https://registry.npmjs.com/ && git push --follow-tags"
+    "release:only": "changeset publish --registry=https://registry.npmjs.com/"
   },
   "publishConfig": {
     "access": "public"
