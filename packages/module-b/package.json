@@ -36,7 +36,7 @@
     "watch": "pnpm build -- --watch src/"
   },
   "keywords": [],
-  "author": "",
+  "author": "TinyChou",
   "license": "ISC",
   "devDependencies": {
     "tsup": "^5.12.6"

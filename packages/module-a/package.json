@@ -31,7 +31,7 @@
     "watch": "unbuild --stub"
   },
   "keywords": [],
-  "author": "",
+  "author": "TinyChou",
   "license": "ISC",
   "devDependencies": {
     "unbuild": "^0.7.4"
