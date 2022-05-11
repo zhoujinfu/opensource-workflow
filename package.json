@@ -5,8 +5,10 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "tdd": "vitest -w ./tests",
+    "test": "pnpm -r --filter=./packages/** run test",
     "prepublishOnly": "pnpm build",
-    "build": "pnpm -r --filter {packages} run build",
+    "build": "pnpm -r --filter=./packages/** run build",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "pnpm build && pnpm release:only",
@@ -27,6 +29,10 @@
   },
   "homepage": "https://github.com/zhoujinfu/opensource-workflow#readme",
   "devDependencies": {
-    "@changesets/cli": "^2.22.0"
+    "@changesets/cli": "^2.22.0",
+    "fs-extra": "^10.1.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.8",
+    "vitest": "^0.12.4"
   }
 }
