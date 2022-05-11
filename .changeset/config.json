@@ -2,7 +2,7 @@
   "$schema": "https://unpkg.com/@changesets/config@1.6.2/schema.json",
   "changelog": [
     "@changesets/changelog-github",
-    { "repo": "changesets/action" }
+    { "repo": "zhoujinfu/opensource-workflow" }
   ],
   "commit": false,
   "linked": [],
