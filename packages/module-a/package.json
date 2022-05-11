@@ -1,0 +1,39 @@
+{
+  "name": "module-a",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "files": [
+    "dist",
+    "*.d.ts",
+    "*.mjs",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "tdd": "vitest -w",
+    "test": "vitest run",
+    "prepublishOnly": "pnpm build",
+    "build": "unbuild",
+    "watch": "unbuild --stub"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "unbuild": "^0.7.4"
+  }
+}

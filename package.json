@@ -1,0 +1,20 @@
+{
+  "name": "opensource-workflow",
+  "version": "1.0.0",
+  "description": "it's an open source workflow on GitHub",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhoujinfu/opensource-workflow.git"
+  },
+  "keywords": [],
+  "author": "zhoujinfu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhoujinfu/opensource-workflow/issues"
+  },
+  "homepage": "https://github.com/zhoujinfu/opensource-workflow#readme"
+}
