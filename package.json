@@ -4,7 +4,15 @@
   "description": "it's an open source workflow on GitHub",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "npx only-allow pnpm",
+    "prepublishOnly": "pnpm build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && pnpm release:only",
+    "release:only": "changeset publish --registry=https://registry.npmjs.com/"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -16,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/zhoujinfu/opensource-workflow/issues"
   },
-  "homepage": "https://github.com/zhoujinfu/opensource-workflow#readme"
+  "homepage": "https://github.com/zhoujinfu/opensource-workflow#readme",
+  "devDependencies": {
+    "@changesets/cli": "^2.22.0"
+  }
 }
