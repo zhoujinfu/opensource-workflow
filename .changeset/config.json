@@ -1,13 +1,13 @@
 {
-  "$schema": "https://unpkg.com/@changesets/config@1.6.1/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "owner/repo" }],
+  "$schema": "https://unpkg.com/@changesets/config@1.6.2/schema.json",
+  "changelog": [
+    "@changesets/changelog-github",
+    { "repo": "changesets/action" }
+  ],
   "commit": false,
   "linked": [],
   "access": "restricted",
-  "baseBranch": "origin/main",
+  "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": [],
-  "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
-    "updateInternalDependents": "always"
-  }
+  "ignore": []
 }
