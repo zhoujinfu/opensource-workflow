@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "tdd": "vitest -w ./tests",
-    "test": "pnpm -r --filter=./packages/** run test",
+    "tdd": "vitest -w",
+    "test": "vitest run && pnpm -r --filter=./packages/** run test",
     "prepublishOnly": "pnpm build",
     "build": "pnpm -r --filter=./packages/** run build",
     "changeset": "changeset",

@@ -4,10 +4,10 @@ import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import json from '@rollup/plugin-json'
 import alias from '@rollup/plugin-alias'
-import { createRequire } from 'module'
+import module from 'module'
 import { defineConfig, RollupOptions } from 'rollup'
 
-const require = createRequire(import.meta.url)
+const require = module.createRequire(import.meta.url)
 const pkg = require('./package.json')
 const entries = {
   index: 'src/index.ts',
