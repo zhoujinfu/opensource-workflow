@@ -6,10 +6,11 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepublishOnly": "pnpm build",
+    "build": "pnpm -r --filter {packages} run build",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "pnpm build && pnpm release:only",
-    "release:only": "changeset publish --registry=https://registry.npmjs.com/"
+    "release:only": "changeset publish --registry=https://registry.npmjs.com/ && git push --follow-tags"
   },
   "publishConfig": {
     "access": "public"
