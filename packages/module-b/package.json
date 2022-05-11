@@ -40,5 +40,8 @@
   "license": "ISC",
   "devDependencies": {
     "tsup": "^5.12.6"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

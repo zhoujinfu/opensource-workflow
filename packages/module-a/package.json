@@ -35,5 +35,8 @@
   "license": "ISC",
   "devDependencies": {
     "unbuild": "^0.7.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
