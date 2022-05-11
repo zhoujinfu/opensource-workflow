@@ -1,5 +1,5 @@
 {
-  "name": "opensource-workflow",
+  "name": "@tinychou/opensource-workflow",
   "version": "1.0.0",
   "description": "it's an open source workflow on GitHub",
   "private": true,

@@ -1,5 +1,5 @@
 {
-  "name": "module-b",
+  "name": "@tinychou/module-b",
   "version": "1.0.0",
   "description": "",
   "type": "module",
