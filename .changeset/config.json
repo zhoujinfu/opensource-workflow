@@ -3,7 +3,7 @@
   "changelog": ["@changesets/changelog-github", { "repo": "owner/repo" }],
   "commit": false,
   "linked": [],
-  "access": "public",
+  "access": "restricted",
   "baseBranch": "origin/main",
   "updateInternalDependencies": "patch",
   "ignore": [],
